@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.main-div {
+  display: grid;
+  margin: 10px;
+  gap: 10px;
+}
+.child-div img,
+.child-div-visited img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+.child-div {
+  background-color: royalblue;
+  padding: 5px;
+  border-radius: 8px;
+}
+.child-div-visited {
+  background-color: rgb(225, 209, 65);
+  padding: 5px;
+  border-radius: 8px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 20px;
+  margin: 10px auto;
+  display: block;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  border: transparent;
+  background-color: rgb(225, 65, 65);
+  cursor: pointer;
+}
+@media screen and (min-width: 600px) {
+}
+@media screen and (min-width: 1100px) {
+  .main-div {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
